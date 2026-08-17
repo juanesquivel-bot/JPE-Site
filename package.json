@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "clasp:login": "clasp login",
+    "clasp:create": "clasp create --type sheets --title \"JPE Ventures Inquiries\" --rootDir apps-script",
+    "clasp:push": "clasp push --force",
+    "clasp:deploy": "clasp create-deployment --description \"Form intake web app\""
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
@@ -22,6 +26,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@google/clasp": "^3.1.3"
   }
 }

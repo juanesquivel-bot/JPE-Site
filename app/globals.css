@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
+/*
+  JPE Ventures palette — from the logo
+  Sky:  #79BBE4
+  Navy: #102D61
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sky: #79bbe4;
+  --navy: #102d61;
+  --background: #f4fafd;
+  --foreground: #102d61;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-navy: #102d61;
+  --color-navy-deep: #0a1b3d;
+  --color-navy-mid: #1a4480;
+  --color-sky: #79bbe4;
+  --color-sky-dark: #4fa3d4;
+  --color-sky-light: #b7dcf0;
+  --color-ice: #e8f4fb;
+  --color-frost: #f4fafd;
+  --color-muted: #5c7394;
+  --color-muted-light: #8ba0b8;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 20s ease-out forwards;
 }
