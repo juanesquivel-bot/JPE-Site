@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   description:
     "From custom home construction and structural renovations to high-precision commercial build-outs, JPE Ventures brings four decades of trade mastery, structural integrity, and dedicated site leadership to every project.",
   icons: {
-    icon: "/JPELogo_transparent_2048px.png",
-    apple: "/JPELogo_transparent_2048px.png",
+    icon: "/JPE_Logo_Transparent.png",
+    apple: "/JPE_Logo_Transparent.png",
   },
 };
 

@@ -6,6 +6,7 @@ const Button = ({ children, variant = 'primary', onClick, className = '', type =
       primary: "bg-navy text-white hover:bg-navy-mid",
       sky: "bg-sky text-navy hover:bg-sky-dark hover:text-white",
       outline: "border border-navy text-navy hover:bg-navy hover:text-white",
+      outlineWhite: "border border-white text-white hover:bg-white hover:text-navy",
       white: "bg-white text-navy hover:bg-ice",
       ghost: "text-navy hover:text-sky px-0 py-1"
     };
