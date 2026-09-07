@@ -1,0 +1,26 @@
+export const siteConfig = {
+  name: 'JPE Ventures',
+  legalName: 'JPE Ventures',
+  tagline: 'General Contracting',
+  title: 'JPE Ventures | General Contracting in Texas',
+  description:
+    'Texas general contractor with 40 years of experience in custom homes, remodeling, framing, drywall, and commercial build-outs. JPE Ventures — building residential and commercial.',
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://jpe-ventures.com').replace(/\/$/, ''),
+  email: 'Juanesquivel@jpe-ventures.com',
+  founder: 'Juan Pablo Esquivel Sr.',
+  areaServed: 'Texas, USA',
+  locale: 'en_US',
+  keywords: [
+    'JPE Ventures',
+    'general contractor Texas',
+    'custom home construction',
+    'home remodeling',
+    'home additions',
+    'residential framing',
+    'commercial drywall',
+    'metal stud framing',
+    'general contracting',
+  ],
+  logoPath: '/JPE_Logo_Transparent.png',
+  ogImageAlt: 'JPE Ventures — General Contracting, building residential and commercial',
+} as const;

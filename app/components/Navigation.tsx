@@ -68,7 +68,7 @@ export default function Navigation() {
             <Logo
               priority
               className={`transition-all duration-500 ${
-                scrolled || mobileMenuOpen ? 'h-12 md:h-14' : 'h-14 md:h-18'
+                scrolled || mobileMenuOpen ? 'h-12 md:h-14' : 'h-16 md:h-20'
               } ${isOverHero ? 'drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)]' : ''}`}
             />
           </button>
